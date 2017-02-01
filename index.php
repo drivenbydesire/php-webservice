@@ -9,22 +9,15 @@ require 'Slim/Slim.php';
 $app = new \Slim\Slim();
 
 $app->get('/test', function() use ($app){
-    $response = array();
-    $service = new WebService();
-    $test = $service->test();
-    $response["error"] = false;
-    $response['message'] = "Testing the Webserver Class";
-    echoRespnse(400, $response);
+    
+    $service = new WebService($app);
+    $service->get_test();
 });
 
 $app->get('/locations', function() use ($app)
 {
-    $response = array();
-    $service = new WebService();
-    $test = $service->test();
-    $response["error"] = false;
-    $response['message'] = "Testing the Webserver Class";
-    echoRespnse(400, $response);
+    $service = new WebService($app);
+    $service->get_locations();
 });
 
 /**

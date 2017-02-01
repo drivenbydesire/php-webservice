@@ -11,6 +11,15 @@ class Admin extends Controller{
   }
 
   private function testDB(){
-    var_dump($this->db);
+    var_dump($this->model);
+  }
+  
+  public function fetchLocations(){
+    $_res = $this->model->fetchLocations();
+//    foreach($_res as $row){
+//        $res['item'][] = $row['item'];
+//        $res['parent'][] = $row['parent'];
+//    }
+    return json_encode($_res);
   }
 }

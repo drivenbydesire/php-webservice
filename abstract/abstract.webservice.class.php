@@ -12,8 +12,10 @@ abstract class AbsWebservice
 {
   //protected $db;
   protected $ctrl;
-
-  function __construct(){ # Constructer Method
+  protected $app;
+  
+  function __construct($app){ # Constructer Method
+    $this->app = $app;
     # Initialize Model
     //$this->db = $this->getNewModelInstance();
     $this->ctrl = $this->getNewControllerInstance();
@@ -26,7 +28,13 @@ abstract class AbsWebservice
       // fatal error
       vendorTGW_ErrorHandler($errno, $errstr, $errfile, $errline);
   }
-
+  
+  protected function sendResponse($status, $response){
+    $this->app->status($status);
+    $this->app->contentType('application/json');
+    echo json_encode($response);
+  }
+  
   private function getNewModelInstance(){
     # Load Model Class
     require_once(DIR_MODEL.MODEL_CLASS);

@@ -20,10 +20,10 @@ abstract class Model implements CRUD
 
     try {
 			# Connecting to mysql database
-      echo 'Connecting db... \n';
-			$this->conn = new PDO("mysql:host=" . DB_HOST . "; dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
+      //echo 'Connecting db... \n';
+			$this->conn = new PDO("mysql:host=" . DB_HOST . "; dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
 			# set the PDO error mode to exception
-			# $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			return $this->conn;
 		} catch (PDOException $e) {
 			echo "Connection failed: " . $e->getMessage();
@@ -31,7 +31,15 @@ abstract class Model implements CRUD
   }
 
   protected function insert(){
+      
+  }
+  
+  protected function fetchAll($_tableName){
+    $_qry = "SELECT * FROM `$_tableName`";  
+    $stmt = $this->conn->prepare($_qry);
+    $execution = $stmt->execute(array());
+    $result    = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    return ($execution)? $result: NULL;
   }
 }
-?>

@@ -12,7 +12,9 @@ class OnlyModel extends Model
     parent::__construct();
   }
 
-
+  public function fetchLocations(){
+      return $this->fetchAll('parent_child');
+  }
 }
 
 

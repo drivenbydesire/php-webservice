@@ -1,0 +1,52 @@
+
+$ 2017-02-01 15:07:01 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:07:12 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:07:37 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:08:00 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:09:10 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:09:21 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:09:38 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:10:11 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:10:12 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:10:41 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:11:20 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:11:38 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:11:50 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:12:55 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:14:44 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:14:46 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:17:18 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:19:38 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:20:59 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:21:10 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:21:59 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:24:21 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:25:12 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:25:56 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:26:00 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4
+
+$ 2017-02-01 15:26:28 >> Error msg: Division by zero, in file C:\xampp\htdocs\php-webservice\index.php, at line number 4

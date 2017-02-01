@@ -6,11 +6,11 @@ require_once(DIR_MODEL.MODEL_CLASS);
 
 abstract class Controller
 {
-  protected $db;
+  protected $model;
   function __construct(){
     # code...
-    $this->db = new OnlyModel();
-    echo ' importing Controller... \n';
+    $this->model = new OnlyModel();
+    //echo ' importing Controller... \n';
   }
 }
 
