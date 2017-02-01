@@ -14,11 +14,6 @@ class WebService extends AbsWebservice
   
   private function __clone() {}
   
-  public function test(){
-    // var_dump($this->ctrl);
-    //echo 'Testing Webservice Method... \n';
-  }
-  
   public function get_test(){
     $data = $this->ctrl->fetchData();
     $response["error"]      = false;
@@ -28,9 +23,8 @@ class WebService extends AbsWebservice
   }
   
   public function post_test(){
-    //$postData = $this->app->request()->post("param_a");
-    //print_r($postData);
-    $this->getParams();
+    $_params = $this->getParamsJSON();
+    print_r($_params);
     $data = $this->ctrl->fetchData();
     $response["error"]      = false;
     $response['message']    = "Testing the Webserver Class Test POST";

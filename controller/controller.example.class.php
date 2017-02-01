@@ -13,13 +13,9 @@ class Admin extends Controller{
   private function testDB(){
     var_dump($this->model);
   }
-  
+
   public function fetchData(){
     $_res = $this->model->fetchDataAll();
-//    foreach($_res as $row){
-//        $res['item'][] = $row['item'];
-//        $res['parent'][] = $row['parent'];
-//    }
     return json_encode($_res);
   }
 }

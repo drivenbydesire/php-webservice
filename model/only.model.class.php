@@ -16,9 +16,3 @@ class OnlyModel extends Model
       return $this->fetchAll('parent_child');
   }
 }
-
-
-
-// $test = new OnlyModel();
-// var_dump($test);
-?>
