@@ -15,20 +15,25 @@ class WebService extends AbsWebservice
   private function __clone() {}
   
   public function test(){
-    var_dump($this->ctrl);
+    // var_dump($this->ctrl);
     //echo 'Testing Webservice Method... \n';
   }
   
   public function get_test(){
+    $data = $this->ctrl->fetchData();
     $response["error"]      = false;
     $response['message']    = "Testing the Webserver Class Test GET";
+    $response["result"]     = json_decode($data);
     $this->sendResponse(200, $response);
   }
   
-  public function get_locations(){
-    $data = $this->ctrl->fetchLocations();
+  public function post_test(){
+    //$postData = $this->app->request()->post("param_a");
+    //print_r($postData);
+    $this->getParams();
+    $data = $this->ctrl->fetchData();
     $response["error"]      = false;
-    $response['message']    = "Testing the Webserver Class Locations GET";
+    $response['message']    = "Testing the Webserver Class Test POST";
     $response["result"]     = json_decode($data);
     $this->sendResponse(200, $response);
   }

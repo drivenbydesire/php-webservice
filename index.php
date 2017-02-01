@@ -14,33 +14,11 @@ $app->get('/test', function() use ($app){
     $service->get_test();
 });
 
-$app->get('/locations', function() use ($app)
-{
+$app->post('/test', function() use ($app){
+    
     $service = new WebService($app);
-    $service->get_locations();
+    $service->post_test();
 });
-
-/**
- * Echoing json response to client
- * @param String $status_code Http response code
- * @param Int $response Json response
- */
-function echoRespnse($status_code, $response)
-{
-    $app = \Slim\Slim::getInstance();
-    // Http response code
-    $app->status($status_code);
-
-    // setting response content type to json
-    $app->contentType('application/json');
-
-    echo json_encode($response);
-}
-
-function debugEcho($debug){
-    $app = \Slim\Slim::getInstance();
-    echo $debug;
-}
 
 $app->run();
 ?>

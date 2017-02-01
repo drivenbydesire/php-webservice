@@ -14,8 +14,8 @@ class Admin extends Controller{
     var_dump($this->model);
   }
   
-  public function fetchLocations(){
-    $_res = $this->model->fetchLocations();
+  public function fetchData(){
+    $_res = $this->model->fetchDataAll();
 //    foreach($_res as $row){
 //        $res['item'][] = $row['item'];
 //        $res['parent'][] = $row['parent'];

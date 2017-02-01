@@ -35,6 +35,11 @@ abstract class AbsWebservice
     echo json_encode($response);
   }
   
+  protected function getParams(){
+    $test = $this->app->request()->getBody();
+    var_dump($test);
+  }
+  
   private function getNewModelInstance(){
     # Load Model Class
     require_once(DIR_MODEL.MODEL_CLASS);
