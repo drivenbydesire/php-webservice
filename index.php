@@ -21,4 +21,3 @@ $app->post('/test', function() use ($app){
 });
 
 $app->run();
-?>

@@ -32,8 +32,8 @@ abstract class AbsWebservice
   }
 
   protected function getParamsJSON(){
-    $test = $this->app->request()->getBody();
-    $test = json_decode($test);
+    $req    = $this->app->request()->getBody();
+    $test = json_decode($req);
     return $test;
   }
 
