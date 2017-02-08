@@ -3,7 +3,7 @@
  * Sample Abstract Class Layer For Webservice
  */
  function webservice_ErrorHandler($code, $message, $file, $line){
-     date_default_timezone_set("Asia/Kolkata");
+     date_default_timezone_set(DEFAULT_TIMEZONE);
      $timestamp = date("Y-m-d H:i:s");
      error_log("\r\n"."$ ".$timestamp." >> Error msg: ".$message.", in file ".$file.", at line number ".$line."\n",3,'logs/errors.txt');
  }
@@ -17,7 +17,7 @@ abstract class AbsWebservice
     $this->app = $app;
     $this->ctrl = $this->getNewControllerInstance();
     set_error_handler(array($this, 'fatalErrorShutdownHandler'));
-    date_default_timezone_set("Asia/Kolkata");
+    date_default_timezone_set(DEFAULT_TIMEZONE);
   }
 
   public function fatalErrorShutdownHandler($errno, $errstr, $errfile, $errline, $errcontext){
@@ -33,8 +33,8 @@ abstract class AbsWebservice
 
   protected function getParamsJSON(){
     $req    = $this->app->request()->getBody();
-    $test = json_decode($req);
-    return $test;
+    $data   = json_decode($req);
+    return $data;
   }
 
   private function getNewControllerInstance(){

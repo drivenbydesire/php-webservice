@@ -5,8 +5,8 @@
 define('DEFAULT_TIMEZONE', 'Asia/Kolkata');
 date_default_timezone_set(DEFAULT_TIMEZONE);
 
-define('BASE_URL', 'http://localhost/portal/arch/');
-define('APP_URL', '');
+define('BASE_URL', 'http://localhost/php-webservice');
+define('APP_URL', 'http://localhost/php-webservice');
 
 define('DIR_SERVICES','service/');
 define('WEBSERVICE_TEST','only.webservice.class.php');
@@ -28,6 +28,8 @@ define('CONTROLLER_CLASS','controller.example.class.php');
 
 define('DIR_SLIM','libs/Slim/');
 define('SLIM_CLASS','Slim.php');
+
+define('REQUIRE_SLIM_CLASS','Slim/Slim.php');
 /*
 # define constant, serialize array
 define ("FRUITS", serialize (array (0=>"apple", 'test'=>"cherry", -1=>"banana")));

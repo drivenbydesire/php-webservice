@@ -3,7 +3,7 @@ require_once('config/def.constants.php');
 require_once(DIR_SERVICES.WEBSERVICE_TEST);
 echo 2/0;
 
-require 'Slim/Slim.php';
+require REQUIRE_SLIM_CLASS;
 
 \Slim\Slim::registerAutoloader();
 $app = new \Slim\Slim();
